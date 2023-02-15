@@ -1,0 +1,56 @@
+.review-slide__wrapper {
+  margin-top: 67px;
+  position: relative;
+}
+
+/* Ограничивающая оболочка */
+.review-slide__wrapper .slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.review-slide__wrapper .slick-track {
+  display: flex;
+}
+
+/* Стрелка */
+.review-slide__wrapper .slick-arrow {
+  margin: -45px 0 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  font-size: 0;
+  width: 30px;
+  height: 80px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Стрелка влево */
+.review-slide__wrapper .slick-arrow.slick-prev {
+  left: -40px;
+  background: url('../img/arrowPrevSlide.svg') 0 0 /100% no-repeat;
+}
+
+.review-slide__wrapper .slick-arrow.slick-prev:hover {
+  background: url('../img/arrowPrevSlideHover.svg') 0 0 /100% no-repeat;
+}
+
+/* Стрелка вправо */
+.review-slide__wrapper .slick-arrow.slick-next {
+  right: -40px;
+  background: url('../img/arrowNextSlide.svg') 0 0 /100% no-repeat;
+}
+
+.review-slide__wrapper .slick-arrow.slick-next:hover {
+  background: url('../img/arrowNextSlideHover.svg') 0 0 /100% no-repeat;
+}
+
+.review-slide__item {
+  justify-content: center;
+}
+
+.btn-slide__more {
+  margin-top: 70px;
+  display: inline-block;
+}

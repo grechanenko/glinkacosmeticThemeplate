@@ -1,0 +1,136 @@
+/* Слайдер */
+.index-slide__wrapper {
+  position: relative;
+}
+
+/* Ограничивающая оболочка */
+.index-slide__wrapper .slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.index-slide__wrapper .slick-track {
+  display: flex;
+}
+
+/* Стрелка */
+.index-slide__wrapper .slick-arrow {
+  margin: -45px 0 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  font-size: 0;
+  width: 30px;
+  height: 80px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Стрелка влево */
+.index-slide__wrapper .slick-arrow.slick-prev {
+  left: 20%;
+  background: url('../img/arrowPrevSlide.svg') 0 0 /100% no-repeat;
+}
+
+.index-slide__wrapper .slick-arrow.slick-prev:hover {
+  background: url('../img/arrowPrevSlideHover.svg') 0 0 /100% no-repeat;
+}
+
+/* Стрелка вправо */
+.index-slide__wrapper .slick-arrow.slick-next {
+  right: 20%;
+  background: url('../img/arrowNextSlide.svg') 0 0 /100% no-repeat;
+}
+
+.index-slide__wrapper .slick-arrow.slick-next:hover {
+  background: url('../img/arrowNextSlideHover.svg') 0 0 /100% no-repeat;
+}
+
+.index-slide__item {
+  height: 580px;
+  align-items: center;
+}
+
+.index-slide__item-text {
+  margin-left: 45%;
+  width: 588px;
+  text-align: right;
+}
+
+.index-slide__first-title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 0.76em;
+  text-transform: uppercase;
+}
+
+.index-slide__big-title {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 71px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.index-slide__second-title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 0.51em;
+  text-transform: uppercase;
+}
+
+.index-slide__link-wrapper {
+  margin-top: 75px;
+  align-items: center;
+}
+
+.index-slide__link-icon {
+  margin-right: 53px;
+}
+
+.index-slide__link {
+  padding: 19px 10px 19px 69px;
+  width: 416px;
+  align-items: center;
+  background-color: var(--color-BB7D58-05);
+  font-size: 25px;
+  line-height: 28px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  transition: background-color, color .3s ease-in-out;
+}
+
+.index-slide__link-subtext {
+  display: none;
+  margin-left: 10px;
+}
+
+.index-slide__link-subtext__other {
+  margin-left: 10px;
+  font-size: 25px;
+  line-height: 28px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.index-slide__link:hover {
+  background-color: var(--color-BB7D58);
+  color: var(--color-white);
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+}
+
+.index-slide__link:hover .index-slide__link-icon {
+  margin-right: 43px;
+}
+
+.index-slide__link:hover .index-slide__link-subtext {
+  display: block;
+}
+
+.index-slide__link:hover~.index-slide__link-subtext__other {
+  display: none;
+}

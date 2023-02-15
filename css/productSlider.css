@@ -1,0 +1,117 @@
+.product-slide__wrapper {
+  margin-top: 67px;
+  position: relative;
+}
+
+/* Ограничивающая оболочка */
+.product-slide__wrapper .slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.product-slide__wrapper .slick-track {
+  display: flex;
+}
+
+/* Стрелка */
+.product-slide__wrapper .slick-arrow
+{
+  margin: -45px 0 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  font-size: 0;
+  width: 30px;
+  height: 80px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Стрелка влево */
+.product-slide__wrapper .slick-arrow.slick-prev {
+  left: -40px;
+  background: url('../img/arrowPrevSlide.svg') 0 0 /100% no-repeat;
+}
+
+.product-slide__wrapper .slick-arrow.slick-prev:hover {
+  background: url('../img/arrowPrevSlideHover.svg') 0 0 /100% no-repeat;
+}
+
+/* Стрелка вправо */
+.product-slide__wrapper .slick-arrow.slick-next {
+  right: -40px;
+  background: url('../img/arrowNextSlide.svg') 0 0 /100% no-repeat;
+}
+
+.product-slide__wrapper .slick-arrow.slick-next:hover {
+  background: url('../img/arrowNextSlideHover.svg') 0 0 /100% no-repeat;
+}
+
+.product-slide__item {
+  margin: 1px;
+  padding: 10px 7px;
+  width: 274px;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: outline, text-decoration, text-decoration-color .3s ease-in-out;
+}
+
+.btn-product {
+  display: none;
+  position: absolute;
+  top: 22%;
+  background-color: var(--color-F2F2F2);
+}
+
+.product-slide__item:hover {
+  outline: 1.5px solid var(--color-BB7D58);
+}
+
+.product-slide__item:hover .product-slide__item-title {
+  text-decoration: underline;
+  text-decoration-color: var(--color-BB7D58);
+}
+
+.product-slide__item:hover .btn-product {
+  display: block;
+}
+
+.product-slide__rating {
+  margin-top: 17px;
+  gap: 5px;
+  justify-content: center;
+}
+
+.product-slide__rating-star {
+  color: var(--color-F2D3BF);
+}
+
+.product-slide__item-title {
+  margin-top: 23px;
+  display: block;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-underline-offset: 2px;
+}
+
+.product-slide__item-value {
+  width: 100%;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.product-slide__item-price {
+  width: 100%;
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+}
